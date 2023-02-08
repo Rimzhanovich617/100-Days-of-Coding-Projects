@@ -324,7 +324,7 @@ data = [
     }
 ]
 
-# 1 Create a print() statement that outlines the introduction to the game
+# Create a print() statement that outlines the introduction to the game
 def game_kickoff():
     print(logo)
     print("We are going to play a fun game involving comparing two people\nor categories "
@@ -336,7 +336,7 @@ def game_kickoff():
 def get_random_account():
   return random.choice(data)
 
-# 2 Create a way to separate the "data" name, description, and country
+# Create a way to separate the "data" name, description, and country
 def format_data(account):
   name = account["name"]
   description = account["description"]
@@ -344,9 +344,9 @@ def format_data(account):
   # print(f'{name}: {account["follower_count"]}')
   return f"{name}, a {description}, from {country}"
 
-# 3 Once separated pull the followers count as a separate function
-# 4 Create a print statement for the user to compare the two followers
-# 5 Compare the followers function into two parts as followers A and B
+# Once separated pull the followers count as a separate function
+# Create a print statement for the user to compare the two followers
+# Compare the followers function into two parts as followers A and B
 def check_answer(guess, a_followers, b_followers):
   if a_followers > b_followers:
     return guess == "a"
@@ -389,6 +389,3 @@ game()
 
 
 
-
-# 6 Replace followers A with B
-# 7 Create a score ticker to increase per right answer or end the game if answered wrong
